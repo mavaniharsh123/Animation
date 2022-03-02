@@ -1,0 +1,17 @@
+.ball{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: red;
+    margin-top: 500px;
+  }       
+ @keyframes ball-jump{
+     0%  {height: 120px;}
+     20% {height: 200px;}
+     50% {transform: translateY(-200%); border-radius: 50%;}
+     95% {height: 200px;}
+     100%{height: 120px;}
+ }
+.ball{
+     animation: 1s 1s ball-jump infinite ease-in-out;
+}
